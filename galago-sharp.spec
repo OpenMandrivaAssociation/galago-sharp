@@ -26,7 +26,7 @@ BuildRequires: libgalago-devel >= 0.5.0
 BuildRequires: mono-devel
 #gw only needed for the tests
 #BuildRequires: dbus-sharp
-BuildRequires: gtk-sharp2-devel
+BuildRequires: gtk-sharp2-devel glib-sharp2
 BuildRequires: libxslt-proc
 BuildRequires: automake1.8
 BuildArch: noarch
