@@ -31,6 +31,7 @@ BuildRequires: libxslt-proc
 BuildRequires: automake1.8
 BuildArch: noarch
 Requires: galago3 >= %galagover
+%define _requires_exceptions lib.*galago
 
 %description
 This are the Mono/.NET bindings for the Galago desktop presence framework.
