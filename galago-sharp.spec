@@ -21,6 +21,7 @@ Patch1: galago-sharp-0.5.0-disable-tests.patch
 License: LGPL
 Group: Development/Other
 Url: http://www.galago-project.org/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libgalago-devel >= 0.5.0
 BuildRequires: mono-devel
 #gw only needed for the tests
