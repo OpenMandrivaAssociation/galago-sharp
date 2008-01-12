@@ -1,6 +1,6 @@
 %define name galago-sharp
 %define version 0.5.0
-%define release %mkrel 5
+%define release %mkrel 6
 %define galagover 0.5.2
 
 %if %mdkversion >= 200600
