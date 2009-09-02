@@ -11,7 +11,7 @@
 Summary: Galago Mono bindings
 Name: %{name}
 Version: %{version}
-Release: %mkrel 9
+Release: %mkrel 10
 Source0: http://galago-project.org/files/releases/source/galago-sharp/%{name}-%{version}.tar.bz2
 Source1: galago-sharp-0.5.0-dll.config
 Source2: libgalago-%galagover.tar.bz2
