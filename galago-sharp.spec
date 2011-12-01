@@ -54,11 +54,11 @@ make
 make check
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std pcdatadir=%pkgconfigdir
 cp galago-sharp.dll.config %buildroot%monodir/gac/%name/*/
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
