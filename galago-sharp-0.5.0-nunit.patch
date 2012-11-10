@@ -1,0 +1,11 @@
+--- galago-sharp-0.5.0/tests/Makefile.am~	2006-04-05 10:01:54.000000000 +0200
++++ galago-sharp-0.5.0/tests/Makefile.am	2006-04-21 11:29:26.000000000 +0200
+@@ -23,7 +23,7 @@
+ 	$(CSC) /out:$@ $(REFERENCES) $(srcdir)/$<
+ 
+ unit-tests.dll: unit-tests.cs $(ASSEMBLIES)
+-	$(CSC) /out:$@ /target:library $(REFERENCES) -pkg:nunit $(srcdir)/$<
++	$(CSC) /out:$@ /target:library $(REFERENCES) -pkg:mono-nunit $(srcdir)/$<
+ 
+ EXTRA_DIST = \
+ 	get-presence.cs \
