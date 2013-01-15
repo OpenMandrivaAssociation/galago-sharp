@@ -15,6 +15,7 @@ Source1:	galago-sharp-0.5.0-dll.config
 Source2:	libgalago-%{galagover}.tar.bz2
 Patch0:		galago-sharp-0.5.0-nunit.patch
 Patch1:		galago-sharp-0.5.0-disable-tests.patch
+Patch2:		galago-sharp-0.5.0-automake-1.13.patch
 BuildRequires:	libgalago-devel >= 0.5.0
 BuildRequires:	mono-devel
 #gw only needed for the tests
@@ -32,20 +33,19 @@ This are the Mono/.NET bindings for the Galago desktop presence framework.
 %prep
 %setup -q -a 2
 cp %{SOURCE1}  galago-sharp.dll.config
-%patch0 -p1
-%patch1 -p1
-aclocal-1.8
+%apply_patches
+aclocal
 autoconf
 autoheader
-automake-1.8
+automake
 mv libgalago-%{galagover} sources/libgalago
 
 %build
-./configure --prefix=%{_prefix} --libdir=%{_prefix}/lib
-make
+%configure --libdir=%_prefix/lib
+%make
 
 %check
-make check
+%make check
 
 %install
 %makeinstall_std pcdatadir=%{pkgconfigdir}

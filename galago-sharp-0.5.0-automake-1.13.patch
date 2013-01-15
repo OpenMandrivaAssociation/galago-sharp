@@ -1,0 +1,17 @@
+--- galago-sharp-0.5.0/configure.ac.bero	2013-01-15 21:33:23.086269549 +0100
++++ galago-sharp-0.5.0/configure.ac	2013-01-15 21:33:46.002994557 +0100
+@@ -41,12 +41,12 @@ dnl ####################################
+ VERSION=$GALAGO_SHARP_VERSION
+ PACKAGE=galago-sharp
+ 
+-AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
++AM_INIT_AUTOMAKE
+ 
+ dnl ################################################################
+ dnl # Specify a header configuration file
+ dnl ################################################################
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS([config.h])
+ 
+ dnl ################################################################
+ dnl # Check for some standard stuff.
