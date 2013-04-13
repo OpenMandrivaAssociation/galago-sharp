@@ -6,7 +6,7 @@
 Summary:	Galago Mono bindings
 Name:		galago-sharp
 Version:	0.5.0
-Release:	16
+Release:	17
 License:	LGPL
 Group:		Development/Other
 Url:		http://www.galago-project.org/
@@ -24,6 +24,7 @@ BuildRequires:	gtk-sharp2-devel
 BuildRequires:	glib-sharp2
 BuildRequires:	libxslt-proc
 BuildRequires:	automake1.8
+BuildRequires:	perl-XML-LibXML
 BuildArch:	noarch
 Requires:	galago3 >= %{galagover}
 
