@@ -43,10 +43,7 @@ The pkgconfig for %{name}.
 %setup -q -a 2
 cp %{SOURCE1}  galago-sharp.dll.config
 %apply_patches
-aclocal
-autoconf
-autoheader
-automake
+autoreconf -fiv
 mv libgalago-%{galagover} sources/libgalago
 
 %build
