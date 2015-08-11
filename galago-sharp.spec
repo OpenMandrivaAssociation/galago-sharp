@@ -2,6 +2,7 @@
 
 %define pkgconfigdir %{_datadir}/pkgconfig
 %define monodir %{_prefix}/lib/mono
+%define _disable_rebuild_configure 1
 
 Summary:	Galago Mono bindings
 Name:		galago-sharp
