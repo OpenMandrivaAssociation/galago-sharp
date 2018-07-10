@@ -7,7 +7,7 @@
 Summary:	Galago Mono bindings
 Name:		galago-sharp
 Version:	0.5.0
-Release:	25
+Release:	26
 License:	LGPLv2
 Group:		Development/Other
 Url:		http://www.galago-project.org/
