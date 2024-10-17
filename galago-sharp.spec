@@ -10,7 +10,7 @@ Version:	0.5.0
 Release:	28
 License:	LGPLv2
 Group:		Development/Other
-Url:		http://www.galago-project.org/
+Url:		https://www.galago-project.org/
 Source0:	http://galago-project.org/files/releases/source/galago-sharp/%{name}-%{version}.tar.bz2
 Source1:	galago-sharp-0.5.0-dll.config
 Source2:	http://galago-project.org/files/releases/source/libgalago/libgalago-%{galagover}.tar.bz2
